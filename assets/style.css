@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0
+}
+
+header {
+    background: #13293d;
+    color: #fff;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d8a47f;
+    padding:20px;
+    list-style: none;
+  }
+  ul a{
+    text-decoration: none;
+    color:whitesmoke;
+  }
+/* Links to change colour on hover */
+ul a:hover {
+    background-color: #d8a47f;
+    color: black;
+}
+
+#bio {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+.Alyssa-image {
+    max-width: 100%;
+    height: 200px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    border: #0c1336;
+
+}
+
+p {
+    color: rgb(19, 21, 21);
+    line-height: 1.5;
+    display: flex;
+    flex: 1, 1, auto;
+    float: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#work{
+    text-align: center;
+}
+
+h3 {
+    padding: 10px;
+    text-align: center;
+    background: #13293d;
+    color:#d8a47f;
+      
+}
+
+
+.big-row{
+    display: flex;
+    justify-content: center;
+  
+}
+
+#first-application {
+    width: 850px;
+    border: solid darkslategrey 10px; 
+    padding: 50px;
+    margin: 20px;
+}
+
+
+#Horiseon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+.small-row {
+    display: flex;
+    justify-content: center;
+}
+
+.smaller-row {
+    display:flex;
+    justify-content:center;
+}
+
+.smaller-row {
+    width:400px;
+    border: solid #0c1336 10px;
+    padding: 50px;
+    margin: 20px; 
+}
+
+#float-left {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    padding: 50px; 
+    margin: 25px;
+    float: left;
+
+}
+
+#float-right {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    padding: 50px; 
+    margin: 25px;
+    float: left;
+}
+
+
+ .heading {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #d8a47f;
+    background-color: #0c1336;
+    padding: 60px;
+}
+
+#contact {
+    color:bisque ;
+    background-color: #13293d;
+}
+
+@media screen and (max-width: 768px) {
+    /* Allow applications to fit to scroll size on mobile by stacking on top */
+    .small-row {
+      display: contents;
+    }
+        /* Change the header color */
+    header {
+    background: red;
+    color: #d8a47f;
+    }
+      /* Change the Header Nav color */
+    header nav ul {
+  background-color: #13293d;
+
+    }
+    /* change heading colours */
+    .heading {
+        background-color: red;
+    }
+}
